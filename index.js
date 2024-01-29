@@ -8,7 +8,7 @@ const p2= new Promise((resolve, reject)=>{
     
 
 const p3= new Promise((resolve, reject)=>{
-    setTimeout(()=>resolve("P3 resolved"),2000);
+    setTimeout(()=>reject("P3 failed"),2000);
 });
         
         
