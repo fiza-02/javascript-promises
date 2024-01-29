@@ -3,12 +3,12 @@ setTimeout(()=>resolve("P1 resolved"),3000);
 });
 
 const p2= new Promise((resolve, reject)=>{
-    setTimeout(()=>resolve("P1 resolved"),5000);
+    setTimeout(()=>resolve("P1 resolved"),1000);
     });
     
 
 const p3= new Promise((resolve, reject)=>{
-    setTimeout(()=>resolve("P1 resolved"),2000);
+    setTimeout(()=>reject("P1 failed"),2000);
 });
         
         
