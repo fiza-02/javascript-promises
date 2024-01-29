@@ -25,3 +25,6 @@ Promise.all([p1,p2,p3]) failed case
 
 index.html:1 Uncaught (in promise) P1 failed
 if one promise fails it throws an error and it does not wait for other promises may be fulfilled or rejected
+
+you must have error handling
+P1 failed
