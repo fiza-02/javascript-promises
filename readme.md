@@ -7,4 +7,5 @@ P2 is the one which completes the race first
 -----------------------
 
 Promise.race([p1,p2,p3]) failed case
+index.js:16 P2 failed
 
