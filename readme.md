@@ -1,3 +1,4 @@
+
 Promise.allSetteled([p1,p2,p3]) success case
 
 (3) [{…}, {…}, {…}]
