@@ -8,6 +8,7 @@ const p2= new Promise((resolve, reject)=>{
     
 
 const p3= new Promise((resolve, reject)=>{
+
     setTimeout(()=>reject("P3 failed"),1000);
 });
         

@@ -1,25 +1,47 @@
-Promise.any([p1,p2,p3]) success case
 
-Promise.any() will wait for first settled success
+Promise.allSetteled([p1,p2,p3]) success case
 
+(3) [{…}, {…}, {…}]
+0
+: 
+{status: 'fulfilled', value: 'P1 resolved'}
+1
+: 
+{status: 'fulfilled', value: 'P1 resolved'}
+2
+: 
+{status: 'fulfilled', value: 'P3 resolved'}
+length
+: 
+3
+[[Prototype]]
+: 
+Array(0)
 
 
 
 -----------------------
 
-Promise.all([p1,p2,p3]) failed case
-index.js:17 AggregateError: All promises were rejected
-index.js:18 
-(3) ['P1 failed', 'P2 failed', 'P3 failed']
+Promise.allSetteled([p1,p2,p3]) failed case
+
+
+(3) [{…}, {…}, {…}]
 0
 : 
-"P1 failed"
+{status: 'fulfilled', value: 'P1 resolved'}
 1
 : 
-"P2 failed"
+{status: 'fulfilled', value: 'P1 resolved'}
 2
 : 
-"P3 failed"
+{status: 'rejected', reason: 'P3 failed'}
 length
 : 
 3
+[[Prototype]]
+: 
+Array(0)
+
+it does not throw an error it will collect as list of promises 
+
+wait for all promises to be setteled
